@@ -3,7 +3,6 @@
 * https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2457
 */
 
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -26,7 +25,6 @@ void heapify(int arr[], int n, int i) {
 */
 void heapSort(int arr[], int n) {
     for (int i = n / 2 - 1; i >= 0; i--) heapify(arr, n, i);
-
     for (int i=n-1; i>=0; i--) {
         swap(arr[0], arr[i]);
         heapify(arr, i, 0);
@@ -36,9 +34,7 @@ void heapSort(int arr[], int n) {
 // Imprimir un array
 void printArr(int arr[], int n) {
     cout << arr[0];
-    for (int i = 1; i < n; i++)
-        cout << " " << arr[i];
-
+    for (int i = 1; i < n; i++) cout << " " << arr[i];
     cout << "\n";
 }
 
